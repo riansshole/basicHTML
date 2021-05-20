@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="main.html" target="_blank">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="CSS, HTML, JavaScript">
+	<meta name="description" content="Personal HTML Learning Webpage">
+	<meta name="author" content="Rahmadiyan Muhammad">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="30">
+	<script>
+		function myFunction(){
+			document.getElementById('testing').innerHTML = "Hello JavaScript!";
+		}
+	</script>
+	<style>
+		#myHeader {
+			text-align: center;
+			background-color: lightblue;
+			color: black;
+			padding: 40px;
+			text-align: centerc;
+		}
+		.note {
+			font-style: 120%;
+			color: red;
+		}
+		.city {
+			background-color: tomato;
+			color: white;
+			border: 2px solid black;
+			margin: 20px;
+			padding: 20px;
+		}
+		/*ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}*/
+	/*	li {
+			float:left;
+		}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: none;*/
+		}
+		#table01 {
+			width: 100%;
+			background-color: #f1f1c1
+		}
+		#table01 tr:nth-child(even){
+			background-color: #eee;
+		}
+		#table01 tr:nth-child(odd){
+			background-color: #fff;
+		}
+		#table01 th {
+			color: white;
+			background-color: black;
+		}
+		table, th, td {
+			border: 1px solid black;
+			border-spacing: 5px;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th, td {
+			padding: 15px
+		}
+		body {
+			/*background-image: url('pepe.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;*/
+			background-color: #008B8B;
+			/*background-blend-mode: overlay;*/
+		}
+		/*Custom style with CSS*/
+		/*a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited {
+			color: pink;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		a:active {
+			color: yellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}*/
+
+		/*Link Button with CSS*/
+		/*a:link, a:visited {
+			background-color: #f44336
+			color: white;
+			padding: 15px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+		a:hover, a:active {
+			background-color: red;
+		}*/
+		img {
+			width: 100%
+		}
+	</style>
+	<title>W3</title>
+</head>
+<body>
+
+	<!-- <img src="pepe.png" alt="Image of a Pepe the Frog"> -->
+	<p><img src="pepe.png" alt="Image of a Pepe the Frog" style="float: right;width: 35px;height: 35px;">This image will float to the right of the text. Sad pepe is sad on the right alone how dare you</p>
+	<!-- <img src="pepe.png" alt="Image of a Pepe the Frog" style="float:left;width: 128px;height: 128px"> -->
+	<!-- <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width: 128px;height: 128px"> -->
+
+	<h1 style="background-color: DodgerBlue" id="myHeader">WEBSITE RIAN INI ANJENGGG</h1>
+	<p style="background-color: Tomato">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<h3 style="border: 2px solid Tomato">Hello World</h3>
+	<h3 style="background-color:rgba(255,99,71,0.2);">Hello World</h3>
+	<p style="color: Tomato">My favorite color is <del>red</del> <ins>blue</ins>.</p>
+	<p>This is <sub>subscripted</sub> text.</p>
+	<p>This is <sup>superscripted</sup> text.</p>
+
+	<br>
+
+	<p id="C4">Here is a quote from WWF's website:</p>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature.
+	The world's leading conservation organization,
+	WWF works in 100 countries and is supported by
+	1.2 million members in the United States and
+	close to 5 million globally.
+	</blockquote>
+
+	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+	<address>
+		Written by John Doe. <br>
+		Visit us at: <br>
+		Example.com <br>
+		Box 564, Disneyland <br>
+		USA
+	</address>
+
+	<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+	<bdo dir="rtl">This text will be written from right to left.</bdo>
+	<br>
+	<a href="https://www.w3schools.com" target="_self">Visit W3Schools.com!</a>
+	<br>
+	<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+	<br>
+	<a href="https://www.w3schools.com" target="_parent">Visit W3Schools.com!</a> 
+	<!-- open the document in the parent frame -->
+	<br>
+	<a href="https://www.w3schools.com" target="_top">Visit W3Schools.com!</a>
+	<!-- open the document in the full body of the window -->
+	<br>
+
+	<p><b>ABSOLUTE URL</b></p>
+	<p><a href="https://www.w3.org">W3C</a></p>
+	<p><a href="https://www.google.com">Google</a></p>
+
+	<p><b>RELATIVE URL</b></p>
+	<p><a href="internalcss.html">Internal CSS</a></p>
+	<p><a href="externalcss.html">External CSS</a></p>
+
+	<a href="inlinecss.html">
+		<img src="pepe.png" alt="Pepe Sad" style="width: 15%">
+	</a>
+	<p>CLICK BELOW PEPE TO SEND ME EMAIL</p>
+	<a href="mailto:riansshole123@gmail.com">
+		<img src="pepe.png" alt="PepeEmail" style="width: 15%">
+	</a>
+
+	<!-- <button onclick="inlinecss.html">Inline CSS</button> -->
+	<br>
+	<a href="https://www.W3Schools.com/html" title="Go to W3Schools HTML section">Visit our HTML Tutorial
+	</a>
+
+	<br>
+	<a href="#C4">Jump to C4</a>
+
+	<!-- <picture>
+		<source media="(min-width: 650px)" srcset="pepe.png">
+		<source media="(min-width: 465px)" srcset="pepe.png">
+		<img src="pepe.png">
+	</picture> -->
+
+	<table id="table01" style="width: 100%">
+		<caption style="text-align: center;">WHO THE FUCK IS EVE AND WHY IS SHE 94 Y.O</caption>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+	</table>
+
+
+	<!-- unordered list -->
+
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+		<li>Vodka</li>
+		<li>Bourbon</li>
+	</ul>
+
+	<!-- Ordered list -->
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+		<li>Vodka</li>
+		<li>Bourbon</li>
+	</ol>
+
+	<!-- Description List -->
+	<dl>
+		<dt>Coffee</dt>
+		<dd>- black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>- White cold drink</dd>
+	</dl>
+
+<!-- Type:
+	style="list-style-type:
+		-disc
+		-circle
+		-square
+		-none
+		;"
+ -->
+
+
+ 	<!-- Nested list -->
+ 	<ul>
+ 		<li>Coffee</li>
+ 		<li>Tea
+ 			<ul>
+ 				<li>Black Tea</li>
+ 				<li>Green Tea</li>
+ 			</ul>
+ 		</li>
+ 		<li>Milk</li>
+ 	</ul>
+
+ 	<ol type="I">
+ 		<li>Coffee</li>
+ 		<li>Tea</li>
+ 		<li>Milk</li>
+ 	</ol>
+
+ 	<ol type="1" start="20">
+ 		<li>Coffee</li>
+ 		<li>Tea</li>
+ 		<li>Milk</li>
+ 	</ol>
+
+ 	<ol type="I">
+ 		<li>Coffee</li>
+ 		<li>Tea</li>
+ 		<li>Milk</li>
+ 	</ol>
+
+ 	<!-- Nested OL -->
+ 	<ol>
+ 		<li>Coffee</li>
+ 		<li>Tea
+ 			<ol type="I">
+ 				<li>Black Tea</li>
+ 				<li>Green Tea</li>
+ 			</ol>
+ 		</li>
+ 		<li>Milk</li>
+ 	</ol>
+
+ 	<!-- Description List -->
+ 	<dl>
+ 		<dt>Coffee</dt>
+ 		<dd>- black hot drink</dd>
+ 		<dt>Milk</dt>
+ 		<dd>- white cold drink</dd>
+ 	</dl>
+
+ 	<!-- BLOCK ELEMENT:
+	<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+ 	 -->
+
+ 	 <!-- example -->
+ 	<p>this is example of div -> <div>Hello World</div></p>
+
+ 	<div style="background-color: black;color: white;padding: 20px;">
+		<h2>London</h2>
+		<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+	</div>
+
+ 	 <!-- INLINE ELEMENT:
+	<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+	 -->
+
+	 <!-- example -->
+	<p>this is example of span -> <span>Hello World</span></p>
+
+	<p>My mother has <span style="color: blue;font-weight: bold;">blue</span> eyes and my father has <span style="color: darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+	<!-- class -->
+	<div class="city">
+		<h3>London</h3>
+		<p>London is the capital of England</p>
+	</div>
+	<div class="city">
+		<h3>Paris</h3>
+		<p>Paris is the capital of France</p>
+	</div>
+	<div class="city">
+		<h3>Tokyo</h3>
+		<p>Tokyo is the capital of Japan</p>
+	</div>
+
+	<h3>My <span class="note">Important</span> Heading</h3>
+	<p>This is some <span class="note">important</span> text.</p>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementByClassName("city");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+	<script>
+		function displayResult() {
+			document.getElementById("myHeader").innerHTML = "Have a nice day!";
+		}
+	</script>
+
+	<br>
+	<a href="#myHeader">
+		<img src="pepe.png" style="width: 10%">
+	</a>
+
+	<iframe src="internalcss.html" name="iframe_a" style="border:2px solid red" title="w3school HTML iFrame"></iframe>
+
+	<p><a href="internalcss.html" target="iframe_a">Internal CSS</a></p>
+
+	<p id="paragraphjavascript">This is a testing for javascript scripts</p>
+
+	<script>
+		document.getElementById("paragraphjavascript").innerHTML = "Hello Javascript";
+		document.getElementById("paragraphjavascript").style.fontSize = "25px";
+		document.getElementById("paragraphjavascript").style.color = "red";
+		document.getElementById("paragraphjavascript").style.backgroundColor = "yellow";
+	</script>
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+	<div class="examplejs">
+		<h2>JavaScript Test</h2>
+		<button type="button" onclick="document.getElementById('date').innerHTML=Date()">Click me to display date and time</button>
+		<p id="date"></p>
+	</div>
+
+	<p id="testing"></p>
+</body>
+</html>

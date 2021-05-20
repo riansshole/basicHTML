@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- 
+	menampilkan data yang tabular seperti data di excel 
+-->
+
+
+<!-- 
+Struktur table :
+	<table>
+		<tr> tr = table row / baris
+			<td> td = table data / kolom
+			</td>
+		</tr>
+	</table>
+-->
+
+<!-- Atribut Tabel:
+	- border = menambahkan garis disekitar cell
+	- cellspacing = menambah jarak antar cell
+	- cellpadding = memberi luas pada cell
+	- colspan
+	- rowspan
+-->
+
+<!-- table simple -->
+<h3><b>TABLE SIMPLE</b></h3>
+<table>
+	<tr>
+		<td>[baris 1 kolom 1]</td>
+		<td>[baris 1 kolom 2]</td>
+		<td>[baris 1 kolom 3]</td>
+	</tr>
+
+	<tr>
+		<td>[baris 2 kolom 1]</td>
+		<td>[baris 2 kolom 2]</td>
+		<td>[baris 2 kolom 3]</td>
+	</tr>
+	<tr>
+		<td>[baris 3 kolom 1]</td>
+		<td>[baris 3 kolom 2]</td>
+		<td>[baris 3 kolom 3]</td>
+	</tr>
+</table>
+<br><br><br><br><br>
+<!-- table complex -->
+<hr>
+<br><br><br><br><br>
+<h3><b>TABLE COMPLEX</b></h3>
+<table border="1" cellspacing="0" cellpadding="10">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Kolom 1</th>
+			<th>Kolom 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Baris 1</th>
+			<td>[Baris 1, Kolom 1]</td>
+			<td>[Baris 1, Kolom 2]</td>
+		</tr>
+		<tr>
+			<th>Baris 2</th>
+			<td>[Baris 2, Kolom 1]</td>
+			<td>[Baris 2, Kolom 2]</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
